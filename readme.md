@@ -1,0 +1,1 @@
+Simple Magic: The Gathering API
