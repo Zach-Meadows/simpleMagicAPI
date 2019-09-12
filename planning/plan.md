@@ -1,5 +1,4 @@
-Plan layout
----------
+# Plan layout
 
 - pull most/all data from scryfall-default(on desktop because github doesn't like large files)
 - cut away excess data, such as web links
