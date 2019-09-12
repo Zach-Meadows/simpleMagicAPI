@@ -26,10 +26,21 @@ Types
 - [ ] Permanent: Boolean
 - [ ] CRUD methods
     - [ ] Create
+    - [ ] Read
     - [ ] Update
 
 Colors
 - [ ] name: string
 - [ ] themes: array
 - [ ] attributedAbilites: array
+- [ ] CRUD methods
+    - [ ] Read
+    - [ ] Update
 
+Sets
+- [ ] name
+- [ ] mechanics
+- [ ] theme
+- [ ] CRUD methods
+    - [ ] Create
+    - [ ] Read
