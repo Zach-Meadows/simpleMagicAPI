@@ -1,6 +1,6 @@
 # Plan layout
 
-- pull most/all data from scryfall-default(on desktop because github doesn't like large files)
+- pull most/all data from scryfall-default(in project folder because github doesn't like large files)
 - cut away excess data, such as web links
 - sort by set to eliminate duplicates, and reduce API size
 
@@ -8,39 +8,29 @@ Models/CRUD methods
 -------------
 
 Magic Cards
-- [ ] name: string
-- [ ] img: string
-- [ ] card text: string
-- [ ] color(s): [color reference]
-- [ ] type(s): [types reference]
-
-- [ ] CRUD methods
-    - [ ] Create
-    - [ ] Read
-    - [ ] Update
-    - [ ] Delete
+- [x] name: string
+- [x] img: string
+- [x] color(s)
+- [x] set: set ref
+- [x] CRUD methods
+    - [x] Create
+    - [x] Read
+    - [x] Update
+    - [x] Delete
 
 Types
-- [ ] name: string
-- [ ] Permanent: Boolean
-- [ ] CRUD methods
-    - [ ] Create
-    - [ ] Read
-    - [ ] Update
-
-Colors
-- [ ] name: string
-- [ ] themes: array
-- [ ] attributedAbilites: array
-- [ ] CRUD methods
-    - [ ] Read
-    - [ ] Update
+- [x] name: string
+- [x] Permanent: Boolean
+- [x] CRUD methods
+    - [x] Create
+    - [x] Read
+    - [x] Update
 
 Sets
-- [ ] name
-- [ ] mechanics
-- [ ] theme
-- [ ] CRUD methods
-    - [ ] Create
-    - [ ] Read
-    - [ ] Update
+- [x] name
+- [x] abbreviation
+- [x] set type
+- [x] CRUD methods
+    - [x] Create
+    - [x] Read
+    - [x] Update
