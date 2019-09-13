@@ -7,6 +7,12 @@ router.get("/", (req, res) => {
     res.json(cards);
   });
 });
+router.get("/random", (req, res) => {
+  Cards.find({}).then(cards => {
+    let random = Math.ceil(Math.random()*12958)
+    res.json(cards[random])
+  })
+})
 router.get("/:name", (req, res) => {
   Cards.find({ name: req.params.name }).then(card => {
     res.json(card);
