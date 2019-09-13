@@ -12,4 +12,6 @@ app.use(parser.json());
 //require routes
 app.use(require("./routes/main.js"));
 
-app.listen(3000, () => console.log("listening on port 3000"));
+app.set("port", process.env.PORT || 3000)
+
+app.listen(app.get("port"), () => console.log(`✅ Port: ${app.get("port")} ✅`));
