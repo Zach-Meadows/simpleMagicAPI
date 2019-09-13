@@ -43,3 +43,4 @@ Sets
 - [ ] CRUD methods
     - [ ] Create
     - [ ] Read
+    - [ ] Update

@@ -1,16 +1,14 @@
-const mongoose = require("../db/connection")
+const mongoose = require("../db/connection");
 
 const CardSchema = new mongoose.Schema({
-    name: String,
-    images: Object,
-    colors: Array,
-    types: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Types"
-    },
-    Sets: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Sets"
-    }
+  name: String,
+  image: String,
+  colors: Array,
+  types: String,
+  set: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Sets"
+  }
+});
 
-})
+module.exports = mongoose.model("Cards", CardSchema);
