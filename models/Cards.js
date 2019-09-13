@@ -5,6 +5,7 @@ const CardSchema = new mongoose.Schema({
   image: String,
   colors: Array,
   types: String,
+  random: Number,
   set: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Sets"
