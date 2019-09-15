@@ -38,3 +38,8 @@ Features/Uses
 - find types by name
 - create new types
 - update sets
+
+Future Implementations
+------
+- [ ] Magic Rules
+- [ ] Subtypes/Supertypes
