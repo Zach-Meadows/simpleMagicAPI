@@ -14,6 +14,9 @@ Cards.find({})
   .then(cardsInDB => {
     //for each card
     cardsInDB.forEach(cardDoc => {
+      cardDoc.random = random;
+        //increase random number
+        random++;
       //find card in raw json
       const cardJson = cardsRaw.find(cardItem => {
         return cardItem.name === cardDoc.name;
@@ -21,10 +24,8 @@ Cards.find({})
       //find set in db associated with card in raw json
       Sets.findOne({ name: cardJson.set_name }).then(setDoc => {
         //assign that sets id to the doc
-        cardDoc.set = setDoc.id;
-        cardDoc.random = random;
-        //increase random number
-        random++;
+        cardDoc.set = setDoc._id;
+        
         cardDoc.save();
       });
     });

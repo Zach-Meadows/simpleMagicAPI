@@ -8,7 +8,7 @@ router.get("/", (req, res) => {
   });
 });
 router.get("/random", (req, res) => {
-  let random = Math.ceil(Math.random() * 12953);
+  let random = Math.ceil(Math.random() * 12957);
   Cards.findOne({ random: random }).then(card => {
     res.json(card);
   });
