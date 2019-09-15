@@ -20,7 +20,7 @@ Models/Crud Methods
   
 Features/Uses
 ---------
-- find all modern cards
+- find all modern cards ```api/cards```
 - find random cards
 - find cards by id
 - find cards by name
