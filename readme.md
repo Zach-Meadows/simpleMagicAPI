@@ -29,12 +29,14 @@ Features/Uses
 - update cards by id ```api/cards/update&id=#```
 - delete cards ```/delete&id=#```
 ------------------
+### Sets
 - find all modern sets ```api/sets```
 - find sets by id ```api/sets/id=#```
 - find sets by name ```api/sets/SETNAME-HERE```
 - update sets by id ```api/sets/update&id=#```
 - create new sets ```api/sets/newset```
 -------------------
+### Types
 - find all types ```api/types```
 - find types by name ```api/types/TYPENAME-HERE```
 - create new types ```api/types/newtype```
