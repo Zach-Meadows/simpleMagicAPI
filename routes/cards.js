@@ -14,8 +14,8 @@ router.get("/random", (req, res) => {
   });
 });
 router.get("/id=:id", (req, res) => {
-  Cards.findById(req.params.id).then(set => {
-    res.json(set);
+  Cards.findById(req.params.id).then(card => {
+    res.json(card);
   });
 });
 router.get("/:name", (req, res) => {

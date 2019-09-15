@@ -17,7 +17,12 @@ const cardSeedData = cardsRaw.map(card => {
   /* conditional checking for duplicates and
    * card names that have already been seeded
    */
-  if (card.legalities.modern === "not_legal" || cardNames.includes(card.name) || card.lang != "en" || card.set_type === "promo") {
+  if (
+    card.legalities.modern === "not_legal" ||
+    cardNames.includes(card.name) ||
+    card.lang != "en" ||
+    card.set_type === "promo"
+  ) {
     //if it is a duplicate OR not modern legal, name it steve
     cardSeedItem.name = "STEVE ARGYLE";
     return cardSeedItem;
