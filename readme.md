@@ -20,13 +20,13 @@ Models/Crud Methods
   
 Features/Uses
 ---------
-- find all modern cards ```api/cards```
-- find random cards
-- find cards by id
-- find cards by name
-- create new cards
-- update cards by id
-- delete cards
+- find all modern cards  ```api/cards```
+- find random cards ```api/cards/random```
+- find cards by id ```api/cards/id=#```
+- find cards by name ```api/cards/CARDNAME-HERE```
+- create new cards ```api/cards/newcard```
+- update cards by id ```api/cards/update&id=#```
+- delete cards ```/delete&id=#```
 
 - find all modern sets
 - find sets by id
