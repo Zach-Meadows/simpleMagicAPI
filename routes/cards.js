@@ -13,6 +13,11 @@ router.get("/random", (req, res) => {
     res.json(card);
   });
 });
+router.get("/id=:id", (req, res) => {
+  Cards.findById(req.params.id).then(set => {
+    res.json(set);
+  });
+});
 router.get("/:name", (req, res) => {
   Cards.find({ name: req.params.name }).then(card => {
     res.json(card);
