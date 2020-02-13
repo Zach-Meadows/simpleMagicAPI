@@ -12,15 +12,5 @@ router.get("/:name", (req, res) => {
     res.json(type);
   });
 });
-router.post("/newtype", (req, res) => {
-  Types.create(req.body).then(newType => {
-    res.json(newType);
-  });
-});
-router.put("/update&id=:id", (req, res) => {
-  Types.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(
-    updatedType => res.json(updatedType)
-  );
-});
 
 module.exports = router;

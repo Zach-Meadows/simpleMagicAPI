@@ -18,15 +18,4 @@ router.get("/:name", (req, res) => {
   });
 });
 
-router.post("/newset", (req, res) => {
-  Sets.create(req.body).then(newSet => {
-    res.json(newSet);
-  });
-});
-router.put("/update&id=:id", (req, res) => {
-  Sets.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(
-    updatedSet => res.json(updatedSet)
-  );
-});
-
 module.exports = router;
