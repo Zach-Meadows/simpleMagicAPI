@@ -4,7 +4,6 @@
 const mongoose = require("./connection");
 
 const Cards = require("../models/Cards");
-const Sets = require("../models/Sets");
 const Types = require("../models/Types");
 
 // PARENT JSON HERE
@@ -18,7 +17,6 @@ const cardSeedData = cardsRaw.map(card => {
    * card names that have already been seeded
    */
   if (
-    card.legalities.modern === "not_legal" ||
     cardNames.includes(card.name) ||
     card.lang != "en" ||
     card.set_type === "promo"
